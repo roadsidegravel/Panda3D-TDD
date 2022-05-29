@@ -5,6 +5,7 @@ from direct.showbase.ShowBase import ShowBase
 
 class ScoreKeeper(DirectObject):
     def __init__(self):
+        DirectObject.__init__(self)
         self.score = 0
         self.accept('score-change', self.update_score)
         

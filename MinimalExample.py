@@ -19,6 +19,7 @@ class TestsMinimalExample(unittest.TestCase):
         desired = 'green'
         testGame = MinimalExampleGame()
         result = testGame.value
+        testGame.destroy()
         self.assertEqual(desired, result)
         
     def test_event_turn_blue_changes_value(self):
